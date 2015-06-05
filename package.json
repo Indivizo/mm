@@ -1,0 +1,9 @@
+{
+  "name": "firefly-migration",
+  "version": "1.0.0",
+  "description": "FireFly Migration",
+  "homepage": "https://github.com/Indivizo/firefly#readme",
+  "dependencies": {
+    "mongodb-migrations": "^0.5.0"
+  }
+}
