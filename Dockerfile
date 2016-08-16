@@ -1,11 +1,11 @@
-FROM node:0.12.4
-
-RUN npm install -g mongodb-migrations
+FROM node:6.3
 
 RUN mkdir /migration
 WORKDIR /migration
 
-COPY ./mm-config.js /migration/mm-config.js
+COPY package.json /migration/package.json
+COPY npm-shrinkwrap.json /migration/npm-shrinkwrap.json
+COPY mm-config.js /migration/mm-config.js
+RUN npm install
 
-CMD mm
-
+ENTRYPOINT ["./node_modules/.bin/mm", "migrate"]
