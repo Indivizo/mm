@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Indivizo/mongodb-migration#readme",
   "dependencies": {
-    "mongodb-migrations": "git+https://github.com/Indivizo/mongodb-migrations.git#05a9ee6d31"
+    "mongodb-migrations": "git+https://github.com/Indivizo/mongodb-migrations.git#4d3c73964e4b5168d5f98584aa42e94972ee48e0",
+    "es6-promise": "^3.0.2",
+    "fs-extra": "^0.20.1",
+    "mongodb": "^3.1.1"
   }
 }
